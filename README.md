@@ -1,4 +1,28 @@
 <!-- BEGIN_TF_DOCS -->
+# Terraform GitHub Team Repository Configuration
+
+This project uses Terraform to manage GitHub repositories and assign permissions to teams. It provides a flexible and automated way to manage your GitHub repositories and the teams that have access to them.
+
+## Overview
+
+The project is designed to assign permissions to teams on different repositories. It uses a local variable `flattened` that contains a list of objects, each object representing a repository, a team, and the permission that the team has on that repository. This allows for a highly customizable configuration where each team can have different permissions on different repositories.
+
+## Features
+
+- Automated management of GitHub repositories and teams.
+- Flexible configuration of permissions.
+- Easy to extend and customize.
+
+## Usage
+
+1. Clone the repository.
+2. Update the `var.repositories` variable in your Terraform file with your repository details.
+3. Run `terraform init` to initialize your Terraform workspace.
+4. Run `terraform plan` to see the changes that will be made.
+5. Run `terraform apply` to apply the changes.
+
+Please note that the account executing the Terraform script must have sufficient permissions to add teams to the repositories.
+
 ## Requirements
 
 | Name | Version |
