@@ -9,7 +9,7 @@ variable "github_organization" {
 
 variable "repositories" {
   description = "Map of repository names to their configurations"
-  type        = map(object({
+  type = map(object({
     description     = string
     has_issues      = optional(bool)
     has_projects    = optional(bool)
@@ -27,6 +27,6 @@ variable "users" {
 }
 
 variable "team_names" {
-  type    = list(string)
+  type = list(string)
 }
 

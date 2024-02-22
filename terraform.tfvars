@@ -1,25 +1,28 @@
 team_names = ["Frontend", "Backend"] // Teams will need to be defined here before they can be added to the users.
 
 users = {
-  "JoeAshworth" = ["Frontend", "Backend"], // This will add my user as a member of the Organisation and also to both teams. As I am an owner, this will try to demote me to a member, which is not possible.
-  "user1"      = ["Frontend"], // This will add user1 as a member of the Organisation and to the Frontend team
-  "user2"      = [], // This will add user2 to the the Organisation, but not to any teams. 
+  "JoeAshworth"   = ["Frontend", "Backend"], // This will add my user as a member of the Organisation and also to both teams. As I am an owner, this will try to demote me to a member, which is not possible.
+  "albermarin"    = ["Frontend", "Backend"], 
+  "ivansamartino" = ["Frontend", "Backend"], 
+  "luis-manzano"  = ["Frontend", "Backend"], 
+  "user1"         = ["Frontend"],            // This will add user1 as a member of the Organisation and to the Frontend team
+  "user2"         = [],                      // This will add user2 to the the Organisation, but not to any teams. 
 }
 
 repositories = {
   "voxsmart-service-api" = {
-    description     = "VoxSmart Service API"
-    has_issues      = true
-    visibility      = "private"
-    permissions     = {
+    description = "VoxSmart Service API"
+    has_issues  = true
+    visibility  = "private"
+    permissions = {
       "admin" = ["Backend"],
       "pull"  = ["Frontend"]
     }
   },
   "voxsmart-service-ui" = {
-    description     = "VoxSmart Service UI"
-    visibility      = "private"
-    permissions     = {
+    description = "VoxSmart Service UI"
+    visibility  = "private"
+    permissions = {
       "admin" = ["Frontend"]
     }
   },
@@ -29,7 +32,7 @@ repositories = {
     has_wiki        = true
     has_issues      = true
     visibility      = "public"
-    permissions     = {
+    permissions = {
       "push" = ["Frontend", "Backend"]
     }
   }
